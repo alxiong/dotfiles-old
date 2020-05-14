@@ -1,8 +1,0 @@
-[submodule "prezto"]
-	path = prezto
-	url = git@github.com:AlexXiong97/prezto.git
-	branch = master
-[submodule "vimrc"]
-	path = vimrc
-	url = git@github.com:AlexXiong97/vimrc.git
-	branch = master
