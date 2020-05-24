@@ -1,0 +1,14 @@
+/Code/*
+!/Code/User/
+/Code/User/*/
+/dconf
+/gconf
+/gtk*
+/ibus
+/keepassxc
+/nautilus
+/procps
+/pulse
+
+/mimeapps.list
+/user-dirs*

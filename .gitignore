@@ -1,0 +1,44 @@
+# top-level hidden directories
+/.bash_history
+/.cache
+/.cargo
+/.dbus
+/.gnupg
+/.local
+/.mozilla
+/.pki
+/.pylint.d
+/.rustup
+/.ssh
+/.vscode
+
+# top-level hidden files
+/.esd_auth
+/.fonts.conf
+/.viminfo
+/.Xauthority
+/.Xresources
+/.xsession-errors
+/.zprezto
+
+# top-level directories
+/Desktop
+/Documents
+/Music
+/Public
+/Templates
+/Downloads
+/Pictures
+/work
+/temp
+/org
+/go
+## MacOS
+/Appplications
+/Library
+/Movies
+/Box
+/llvm
+## Linux
+/Videos
+/QubesIncoming

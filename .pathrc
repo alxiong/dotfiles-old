@@ -1,0 +1,12 @@
+# Setup PATH
+
+PATH=""
+
+# System paths
+PATH="/bin:/sbin:/usr/bin:/usr/sbin:/usr/local/bin:/usr/local/sbin:$PATH"
+PATH="/usr/local/go/bin:$PATH"
+
+# Home specific paths.
+PATH="$HOME/.local/bin:$HOME/go/bin:$HOME/.cargo/bin:$PATH"
+
+# My paths

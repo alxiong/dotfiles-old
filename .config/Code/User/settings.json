@@ -1,0 +1,11 @@
+{
+    "workbench.colorTheme": "One Dark Pro",
+    "workbench.sideBar.location": "right",
+    "workbench.iconTheme": "vscode-icons",
+    "editor.minimap.enabled": false,
+    "editor.formatOnSave": true,
+    "editor.tabSize": 2,
+    "editor.insertSpaces": false,
+    "editor.detectIndentation": false,
+    "explorer.confirmDragAndDrop": false
+}
