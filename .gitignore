@@ -6,31 +6,43 @@
 /.gnupg
 /.local
 /.mozilla
+/.npm
 /.pki
 /.pylint.d
+/.rbenv
 /.rustup
 /.ssh
 /.vscode
+/.yarn
 
 # top-level hidden files
 /.esd_auth
+/.fasd
 /.fonts.conf
+/.lesshst
+/.python_history
 /.viminfo
 /.Xauthority
 /.Xresources
 /.xsession-errors
-/.zprezto
+/.xsettingsd
+/.zcompdump
+# includes .zlogin .zlogout .zpreztorc .zprofile .zshenv .zshrc
+# all are symlink created during first time running setup.sh
+/.z*
+/.zhistory
 
 # top-level directories
 /Desktop
 /Documents
 /Music
 /Public
-/Templates
 /Downloads
 /Pictures
-/work
+/snap
 /temp
+/Templates
+/work
 /org
 /go
 ## MacOS

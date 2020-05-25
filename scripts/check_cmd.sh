@@ -10,13 +10,14 @@ DIR=$(dirname $0)
 missing=
 old=
 
-## general
+## general (indep of OS)
 ### iterate through a tuple: https://stackoverflow.com/questions/9713104/loop-over-tuples-in-bash
 OLDIFS=$IFS
 IFS='@'
 for cmd_ver in \
 	zsh@4.3.11 emacs@26.1 alacritty@0.4.0 code@1.45.0 \
-	cargo@0.4.0 go@1.11; do
+	git@2.20.0 \
+	cargo@0.4.0 go@1.11 gcc@0 node@12.16.3 javac@8.0; do
 	set -- $cmd_ver
 	printf '%s' "Checking for $1 (at least $2) ... "
 	check_version $1 $2
@@ -48,12 +49,13 @@ for cmd_ver in \
 done
 IFS=$OLDIFS # reset IFS
 
+os_ind_cmds="npm yarn fdfind cmake make python3 rbenv sml"
 os_specific_cmds=
 get_os
 retval=$?
 case $retval in
-0) os_specific_cmds="xclip" ;;
-1) os_specific_cmds="pbcopy" ;;
+0) os_specific_cmds="$os_ind_cmds xclip" ;;
+1) os_specific_cmds="$os_ind_cmds pbcopy" ;;
 *) ;;
 esac
 for cmd in $os_specific_cmds; do

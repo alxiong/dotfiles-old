@@ -1,12 +1,15 @@
 /Code/*
 !/Code/User/
 /Code/User/*/
+/configstore
 /dconf
+/direnv
 /gconf
 /gtk*
 /ibus
 /keepassxc
 /nautilus
+/nvm
 /procps
 /pulse
 
