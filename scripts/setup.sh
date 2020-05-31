@@ -3,11 +3,11 @@
 set -e
 
 # import helper functions
-DIR=$(dirname $0)
+DIR=$(dirname "$0")
 . $DIR/utils/all.sh
 
 echo 📂 Syncing dotfiles ...
-cd $HOME
+cd "$HOME"
 # ## during a new machine setup, move existing config to ~/temp/old/
 # if [ ! -f "$HOME/.zprofile" ]; then
 # 	trash=".bashrc .bash_logout .bash_profile .profile .vimrc"
@@ -27,25 +27,25 @@ git pull origin master --ff-only
 git submodule update --recursive --remote
 
 # Check necessary commands, tools, programs installed
-sh $DIR/check_cmd.sh
+sh "$DIR/check_cmd.sh"
 if [ $? = 1 ]; then
 	exit 1
 fi
 
 # Configure git
-sh $DIR/configure_git.sh
+sh "$DIR/configure_git.sh"
 
 # Configure zsh using zprezto framework
 echo 🔧 Configuring Zsh ...
-if [ ! -f $HOME/.zpreztorc ]; then
+if [ ! -f "$HOME/.zpreztorc" ]; then
 	for file in "$HOME"/.zprezto/runcoms/*; do
-		filename=$(basename $file)
-		if [ $filename != "README.md" ]; then
+		filename=$(basename "$file")
+		if [ "$filename" != "README.md" ]; then
 			ln -s "$file" "$HOME/.$filename"
 		fi
 	done
 
-	cd $HOME/.zprezto
+	cd "$HOME/.zprezto"
 	git submodule update --init
 	git clone --recurse-submodules https://github.com/belak/prezto-contrib contrib
 	zsh >/dev/null 2>&1

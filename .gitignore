@@ -4,6 +4,7 @@
 /.cargo
 /.dbus
 /.gnupg
+/.grip
 /.local
 /.mozilla
 /.npm
