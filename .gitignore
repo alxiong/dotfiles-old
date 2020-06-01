@@ -13,6 +13,9 @@
 /.rbenv
 /.rustup
 /.ssh
+/.texlive*
+/.vim
+/.vim_rumtime
 /.vscode
 /.yarn
 
@@ -22,6 +25,7 @@
 /.fonts.conf
 /.lesshst
 /.python_history
+/.vim*
 /.viminfo
 /.Xauthority
 /.Xresources
@@ -43,6 +47,7 @@
 /snap
 /temp
 /Templates
+/texmf
 /work
 /org
 /go

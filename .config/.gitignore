@@ -4,7 +4,9 @@
 /configstore
 /dconf
 /direnv
+/enchant
 /gconf
+/gedit
 /gtk*
 /ibus
 /keepassxc

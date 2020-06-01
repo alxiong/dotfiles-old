@@ -5,9 +5,17 @@ PATH=""
 # System paths
 PATH="/bin:/sbin:/usr/bin:/usr/sbin:/usr/local/bin:/usr/local/sbin:$PATH"
 PATH="/usr/local/go/bin:$PATH"
-PATH="/opt/local/bin:/opt/local/sbin:$PATH"
+PATH="/opt/local/bin:/opt/local/sbin:/opt/emacs27/bin:$PATH"
+PATH="/usr/share/texlive/2020/bin/x86_64-linux:$PATH"
 
 # Home specific paths.
 PATH="$HOME/.local/bin:$GOPATH/bin:$HOME/.cargo/bin:$HOME/.rbenv/bin:$PATH"
 PATH="/usr/local/smlnj/bin:$PATH"
 PATH="`yarn global bin`:/snap/bin:$HOME/.emacs.d/bin:$PATH"
+
+# Setup fpath
+# fpath -- where zsh looks for customized zsh functions
+fpath+=(~/.zfunc)
+
+
+# Setup other paths

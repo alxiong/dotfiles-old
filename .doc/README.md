@@ -2,8 +2,7 @@
 
 collections of my config dotfiles for emacs, vim, zsh and more.
 
-
-## Acknowledgement
+## Acknowledgment
 
 - primarily inspired by [BurntSushi's dotfile](https://github.com/BurntSushi/dotfiles)
 - editors using [Doom Emacs](https://github.com/hlissner/doom-emacs) and [ultimate vimrc](https://github.com/amix/vimrc)

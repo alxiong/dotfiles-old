@@ -2,10 +2,10 @@
 
 echo 🔎 Checking necessary programs, tools, commands ...
 
-DIR=$(dirname $0)
-. $DIR/utils/semver.sh
-. $DIR/utils/uname.sh
-. $DIR/utils/cmd_exists.sh
+DIR=$(dirname "$0")
+. "$DIR/utils/semver.sh"
+. "$DIR/utils/uname.sh"
+. "$DIR/utils/cmd_exists.sh"
 
 missing=
 old=
@@ -20,7 +20,7 @@ for cmd_ver in \
 	cargo@0.4.0 go@1.11 gcc@0 node@12.16.3 javac@8.0; do
 	set -- $cmd_ver
 	printf '%s' "Checking for $1 (at least $2) ... "
-	check_version $1 $2
+	check_version "$1" "$2"
 	retval=$?
 	case $retval in
 	0)
@@ -39,7 +39,7 @@ for cmd_ver in \
 		stat="unable to check"
 		;;
 	esac
-	echo $stat
+	echo "$stat"
 
 	if [ $retval -eq 2 ]; then
 		old="$1 (>=$2); $old"
@@ -60,7 +60,7 @@ case $retval in
 esac
 for cmd in $os_specific_cmds; do
 	printf '%s' "Checking for $cmd ... "
-	if ! cmd_exists $cmd; then
+	if ! cmd_exists "$cmd"; then
 		echo "missing"
 		missing="$cmd; $missing"
 	else
@@ -78,7 +78,7 @@ if [ x"$old" != x ]; then
 	echo "⬆️ Update required: $old"
 	return 1
 fi
-if [ x"$missing" = x -a x"$old" = x ]; then
+if [ x"$missing" = x ] && [ x"$old" = x ]; then
 	echo "✔️ All tools ready!"
 	return 0
 fi

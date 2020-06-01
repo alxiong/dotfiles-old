@@ -8,16 +8,16 @@ DIR=$(dirname "$0")
 
 echo 📂 Syncing dotfiles ...
 cd "$HOME"
-# ## during a new machine setup, move existing config to ~/temp/old/
-# if [ ! -f "$HOME/.zprofile" ]; then
-# 	trash=".bashrc .bash_logout .bash_profile .profile .vimrc"
-# 	mkdir -p ./temp/old
-# 	for f in $trash; do
-# 		if [ -f "$f" ]; then
-# 			mv "$f" ./temp/old
-# 		fi
-# 	done
-# fi
+## during a new machine setup, move existing config to ~/temp/old/
+if [ ! -f "$HOME/.zprofile" ]; then
+	trash=".bashrc .bash_logout .bash_profile .profile"
+	mkdir -p ./temp/old
+	for f in $trash; do
+		if [ -f "$f" ]; then
+			mv "$f" ./temp/old
+		fi
+	done
+fi
 if [ ! -d "$HOME/.git" ]; then
 	git init
 	git remote add origin https://github.com/alxiong/dotfiles
@@ -55,6 +55,7 @@ else
 fi
 
 # Configure vim using amix/vimrc framework
+# NOTE: no configurations for vim, to prioritize emacs whenever possible, just minimal vim shall do
 
 # Rebind CapsLock to Ctrl (for easier Emacs C-x)
 echo 🔧 Rebinding CapsLock to Ctrl ...
