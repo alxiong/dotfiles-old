@@ -35,6 +35,7 @@
 # includes .zlogin .zlogout .zpreztorc .zprofile .zshenv .zshrc
 # all are symlink created during first time running setup.sh
 /.z*
+!/.zfunc
 /.zhistory
 
 # top-level directories
