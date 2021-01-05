@@ -49,7 +49,7 @@ for cmd_ver in \
 done
 IFS=$OLDIFS # reset IFS
 
-os_ind_cmds="npm yarn fdfind cmake make python3 rbenv sml"
+os_ind_cmds="starship npm yarn fdfind cmake make python3 rbenv sml"
 os_specific_cmds=
 get_os
 retval=$?

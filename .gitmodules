@@ -1,9 +1,12 @@
 [submodule ".doom.d"]
-path = .doom.d
-url = https://github.com/alxiong/.doom.d
+	path = .doom.d
+	url = git@github.com:alxiong/.doom.d.git
+	branch = master
 [submodule ".emacs.d"]
-path = .emacs.d
-url = https://github.com/hlissner/doom-emacs
+	path = .emacs.d
+	url = https://github.com/hlissner/doom-emacs
+	branch = develop
 [submodule ".zprezto"]
 	path = .zprezto
 	url = https://github.com/alxiong/prezto
+	branch = master
