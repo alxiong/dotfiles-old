@@ -18,6 +18,6 @@ PATH="`yarn global bin`:/snap/bin:$HOME/.emacs.d/bin:$HOME/.nix-profile/bin:$PAT
 fpath+=(~/.zfunc)
 
 # Mac Specific path
-PATH="/opt/homebrew/bin:$PATH"
+PATH="/opt/homebrew/bin:/usr/local/munki:/Library/Apple/usr/bin:$PATH"
 
 # Setup other paths

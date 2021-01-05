@@ -36,13 +36,6 @@ fi
 git submodule update --recursive --remote
 echo
 
-# Check necessary commands, tools, programs installed
-sh "$DIR/check_cmd.sh"
-if [ $? = 1 ]; then
-	exit 1
-fi
-echo
-
 # Configure git
 printf "%s" "🔧 Configuring git ... "
 sh "$DIR/configure_git.sh"
@@ -70,6 +63,13 @@ if [ ! -f "$HOME/.zpreztorc" ]; then
 else
 	echo "already exists, skipping!"
 fi
+
+# Check necessary commands, tools, programs installed
+sh "$DIR/check_cmd.sh"
+if [ $? = 1 ]; then
+	exit 1
+fi
+echo
 
 # Configure vim using amix/vimrc framework
 # NOTE: no configurations for vim, to prioritize emacs whenever possible, just minimal vim shall do
