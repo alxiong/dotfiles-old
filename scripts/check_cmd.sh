@@ -15,9 +15,9 @@ old=
 OLDIFS=$IFS
 IFS='@'
 for cmd_ver in \
-	zsh@4.3.11 emacs@26.1 alacritty@0.4.0 code@1.45.0 \
+	zsh@4.3.11 emacs@26.1 alacritty@0.4.0 \
 	git@2.20.0 \
-	cargo@0.4.0 go@1.11 gcc@0 node@12.16.3 javac@8.0; do
+	cargo@1.48.0 go@1.11 gcc@0 node@12.16.3 javac@8.0; do
 	set -- $cmd_ver
 	printf '%s' "Checking for $1 (at least $2) ... "
 	check_version "$1" "$2"
@@ -72,13 +72,13 @@ done
 echo
 if [ x"$missing" != x ]; then
 	echo "❓ Missing tools: $missing"
-	return 1
+	exit 1
 fi
 if [ x"$old" != x ]; then
 	echo "⬆️ Update required: $old"
-	return 1
+	exit 1
 fi
 if [ x"$missing" = x ] && [ x"$old" = x ]; then
 	echo "✔️ All tools ready!"
-	return 0
+	exit 0
 fi

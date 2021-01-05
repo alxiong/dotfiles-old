@@ -17,5 +17,7 @@ PATH="`yarn global bin`:/snap/bin:$HOME/.emacs.d/bin:$HOME/.nix-profile/bin:$PAT
 # fpath -- where zsh looks for customized zsh functions
 fpath+=(~/.zfunc)
 
+# Mac Specific path
+PATH="/opt/homebrew/bin:$PATH"
 
 # Setup other paths

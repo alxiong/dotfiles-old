@@ -9,7 +9,7 @@ get_version() {
 	if [ $? != 0 ]; then
 		vers=$($1 version 2>/dev/null)
 	fi
-	expr "$vers" : '[^0-9]*\([0-9]*[.][0-9]*[.][0-9]*[0-9A-Za-z-]*\)'
+	expr "$vers" : '[^0-9]*\([0-9]*[.][0-9]*[.]*[0-9]*[0-9A-Za-z-]*\)'
 }
 
 # Echo the major version, eg "2".

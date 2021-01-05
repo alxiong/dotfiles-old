@@ -24,6 +24,7 @@
 /.yarn
 
 # top-level hidden files
+/.bash*
 /.esd_auth
 /.fasd
 /.fonts.conf
