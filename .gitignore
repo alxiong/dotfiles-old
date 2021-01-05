@@ -2,11 +2,14 @@
 /.bash_history
 /.cache
 /.cargo
+/.ccls-cache
 /.dbus
 /.gnupg
+/.gnome
 /.grip
 /.local
 /.mozilla
+/.nix*
 /.npm
 /.pki
 /.pylint.d
@@ -14,6 +17,7 @@
 /.rustup
 /.ssh
 /.texlive*
+/.thunderbird
 /.vim
 /.vim_rumtime
 /.vscode
@@ -31,6 +35,7 @@
 /.Xresources
 /.xsession-errors
 /.xsettingsd
+/.yarnrc
 /.zcompdump
 # includes .zlogin .zlogout .zpreztorc .zprofile .zshenv .zshrc
 # all are symlink created during first time running setup.sh

@@ -11,7 +11,7 @@ PATH="/usr/share/texlive/2020/bin/x86_64-linux:$PATH"
 # Home specific paths.
 PATH="$HOME/.local/bin:$GOPATH/bin:$HOME/.cargo/bin:$HOME/.rbenv/bin:$PATH"
 PATH="/usr/local/smlnj/bin:$PATH"
-PATH="`yarn global bin`:/snap/bin:$HOME/.emacs.d/bin:$PATH"
+PATH="`yarn global bin`:/snap/bin:$HOME/.emacs.d/bin:$HOME/.nix-profile/bin:$PATH"
 
 # Setup fpath
 # fpath -- where zsh looks for customized zsh functions

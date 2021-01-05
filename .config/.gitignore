@@ -5,17 +5,24 @@
 /dconf
 /direnv
 /enchant
+/Ganache
+/gatsby
+/google-chrome
 /gconf
 /gedit
 /gtk*
 /ibus
 /keepassxc
+/menus
 /nautilus
 /nvm
 /procps
 /pulse
+/Slack
 /QtProject*
+/texstudio
 /Thunar
+/truffle
 /Unknown Organization
 /vlc
 /xfce4

@@ -2,6 +2,10 @@
 
 collections of my config dotfiles for emacs, vim, zsh and more.
 
+## How to use it
+
+This is not meant to be cloned then plug and play on your machine, but only for my personal usage.
+
 ## Acknowledgment
 
 - primarily inspired by [BurntSushi's dotfile](https://github.com/BurntSushi/dotfiles)
